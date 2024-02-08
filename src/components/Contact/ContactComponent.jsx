@@ -26,7 +26,7 @@ const ContactComponent = () => {
               href="https://www.linkedin.com/in/rahul-munj-553881194/"
               target="blank"
             >
-              linkdin Profile
+              Linkedin Profile
             </a>
           </div>
         </div>
