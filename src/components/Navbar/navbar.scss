@@ -1,0 +1,105 @@
+.NavbarComponent {
+  height: 5rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  z-index: 9999;
+  .navLogo {
+    font: 500 1rem "poppins";
+    span {
+      font: 800 1.5rem "poppins";
+    }
+  }
+  .navlinks {
+    .desktopTopMenuItems {
+      margin: 1rem;
+      cursor: pointer;
+      &:hover {
+        padding-bottom: 0.5rem;
+        color: var(--primary-text);
+        border-bottom: 3px solid var(--primary-text);
+      }
+      &:active {
+        color: var(--primary-text);
+        border-bottom: 3px solid var(--primary-text);
+      }
+    }
+    transition: all 0.5s;
+  }
+  .desktopMenuButton {
+    button {
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      border: none;
+      background-color: var(--secondary-background);
+      color: var(--secondary-text);
+      transition: 0.5s all;
+      &:hover {
+        // transform: translateY(2px);
+        color: var(--primary-text);
+        background-color: var(--primary-background);
+        box-shadow: rgba(53, 53, 53, 0.416) 0px 8px 24px;
+      }
+    }
+  }
+  .hamburger_icon_mobile {
+    display: none;
+  }
+}
+.mobileNavlinks_hide {
+  display: none;
+}
+.nav_wrapper {
+  .active {
+    border-bottom: 1px solid #0000;
+  }
+}
+@media (max-width: 768px) {
+  .NavbarComponent {
+    // position: relative;
+    .desktopMenuButton {
+      display: none;
+    }
+    .hamburger_icon_mobile {
+      display: block;
+      font-size: 2rem;
+    }
+    .navlinks {
+      display: none;
+    }
+  }
+  .mobileNavlinks {
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    font: 500 1.2rem "poppins";
+    .mobile_contact_button {
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      border: none;
+      background-color: var(--secondary-background);
+      color: var(--secondary-text);
+      transition: 0.5s all;
+      &:hover {
+        // transform: translateY(2px);
+        color: var(--primary-text);
+        background-color: var(--primary-background);
+        box-shadow: rgba(53, 53, 53, 0.416) 0px 8px 24px;
+      }
+    }
+  }
+  .mobileNavlinks_hide {
+    display: none;
+  }
+}
