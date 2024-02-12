@@ -65,7 +65,7 @@ const NavbarComponent = () => {
         </div>
         <RxHamburgerMenu
           className="hamburger_icon_mobile"
-          onClick={() => sethamburger(true)}
+          onClick={() => sethamburger(!hamburger)}
         />
       </nav>
       {hamburger && (
